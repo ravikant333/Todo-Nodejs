@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/15526b87ea.js" crossorigin="anonymous"></script>
+    <title>ToDo</title>
+</head>
+
+<body>
+
+    <section class="top">
+     <div class="header">
+      <div class="icons"> 
+        <span class="left">
+         <i class="fa-sharp fa-solid fa-bars"></i>
+        </span>
+
+        <span class="right">
+            <i class="fa-regular fa-lightbulb"></i>
+        
+            <i class="fas fa-ellipsis-h"></i>
+           
+        </span>
+      </div>
+      <div class="info"> 
+        <h3>My Day</h3>
+        <p id="day"></p>
+      </div>
+     </div>
+
+      
+        <section id="todo-list">
+            
+
+        </section>
+
+    </section>
+
+    <footer class="bottom">
+    <button onclick="handleclick()" class="expand-button"> <span>+</span> New to-do</button>
+    <form id="form" onsubmit="createNew()" class="hide-form">
+      <input type="'text" placeholder="Title" name="title">
+      <input type="text" placeholder="discription" name="discription">
+      <button class="btn" type="submit">Create</button>
+    </form>
+    </footer>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" defer
+  ></script>
+    <script src="browser-app.js" defer></script>
+    
+
+</body>
+
+</html>
