@@ -1,16 +1,15 @@
-
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const TodoSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: [true, 'must provide title'],
+    required: [true, "must provide title"],
     trim: true,
   },
 
   discription: {
     type: String,
-    required: [true, 'must provide discription'],
+    required: [true, "must provide discription"],
     trim: true,
   },
 
@@ -20,9 +19,8 @@ const TodoSchema = new mongoose.Schema({
   },
   favourite: {
     type: Boolean,
-    default:false,
-  }
-})
+    default: false,
+  },
+});
 
-module.exports = mongoose.model('Todo', TodoSchema)
-
+module.exports = mongoose.model("Todo", TodoSchema);

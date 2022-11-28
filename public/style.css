@@ -1,236 +1,243 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    min-height: 100vh;
-    background-color: rgb(105, 105, 255);
-    padding: 10px 10px 0 2px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: relative;
-  }
-  
-  .top {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .header {
-    height: 30vh;
-    background:url('nature.jpg');
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 35px;
-  }
-  
-  .icons i {
-    display: inline-block;
-    font-size: 1.5rem;
-  }
-  
-  .icons .left {
-    margin-left: 30px;
-  }
-  
-  .icons .right {
-    margin-right: 30px;
-  }
-  
-  .right i {
-    margin-left: 1rem;
-  }
-  
-  .info {
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-  
-  .info h3 {
-    font-size: 2.7rem;
-    margin-bottom: 10px;
-  }
-  
-  .info p {
-    font-size: 1.2rem;
-  }
-  
-  #todo-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    background-color: aliceblue;
-  }
-  
-  .list-item {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 6rem;
-  }
-  
-  .list-item button {
-    border: none;
-  }
-  
-  .list-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-    font-weight: 400;
-  }
-  .list-item p {
-    font-size: 1.2rem;
-  }
-  .list-item .done{
-    text-decoration: line-through;
-  }
-  
-  .list-item .item-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .list-item .data {
-    justify-self: flex-start;
-  }
-  
-  .list-item span {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  .star {
-    justify-self: flex-end;
-    margin-right: 20px;
-  }
-  
-  .star i {
-    font-size: 1.5rem;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
-    color: aliceblue;
-  }
+  padding: 0;
+  margin: 0;
+}
 
-  .star .favourite{
-    color: rgb(58, 58, 250);
-  }
-  
-  
-  .checkbox i {
-    font-size: 1.7rem;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
-    color: aliceblue;
-  }
+body {
+  min-height: 100vh;
+  background-color: rgb(105, 105, 255);
+  padding: 10px 10px 0 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+}
 
-  .checkbox .complete{
-    color: green;
-  }
+.top {
+  display: flex;
+  flex-direction: column;
+}
 
-  
-  .bottom {
-    min-height: 10vh;
-    background-color: aliceblue;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    right: 0;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-top: 1px solid grey;
-    margin-left: 2px;
-  }
-  
-  .bottom span {
-    margin-right: 16px;
-    font-size: 1.5rem;
-  }
-  
-  #form {
-    width: 70%;
-    align-self: center;
-    justify-self: center;
-    margin-top: 25px;
-    margin-bottom: 20px;
-  }
-  
-  .hide-form {
-    display: none;
-  }
-  
-  .show-form {
-    display: block;
-  }
-  
-  .expand-button {
-    background-color: aliceblue;
-    border: none;
-    align-self: flex-start;
-    margin-left: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
-    color: rgb(81, 81, 237);
-  }
-  
-  .expand-button span {
-    display: block;
-    font-size: 3rem;
-  }
-  
-  .btn {
-    display: block;
-    width: 4rem;
-    height: 2rem;
-    font-size: 1.2rem;
-    justify-self: center;
-    align-self: center;
-    margin-top: 10px;
-    background-color: rgb(97, 97, 255);
-    color: aliceblue;
-    border-radius: 5px;
-  }
-  
+.header {
+  height: 30vh;
+  background: url("nature.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.icons i {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.icons .left {
+  margin-left: 30px;
+}
+
+.icons .right {
+  margin-right: 30px;
+}
+
+.right i {
+  margin-left: 1rem;
+}
+
+.info {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.info h3 {
+  font-size: 2.7rem;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 1.2rem;
+}
+
+#todo-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  background-color: aliceblue;
+  max-height: 58vh;
+  overflow: auto;
+  scrollbar-arrow-color: aliceblue;
+  scrollbar-base-color: aliceblue;
+}
+
+.list-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 6rem;
+}
+
+.list-item button {
+  border: none;
+}
+
+.list-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.list-item p {
+  font-size: 1.2rem;
+}
+.list-item .done {
+  text-decoration: line-through;
+}
+
+.list-item .item-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item .data {
+  justify-self: flex-start;
+}
+
+.list-item span {
+  display: inline-block;
+  margin-left: 20px;
+}
+.star {
+  justify-self: flex-end;
+  margin-right: 20px;
+}
+.star button{
+  background-color: aliceblue;
+}
+
+.star i {
+  font-size: 1.5rem;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  color: aliceblue;
+}
+
+.star .favourite {
+  color: rgb(58, 58, 250);
+}
+
+.checkbox i {
+  font-size: 1.7rem;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  color: aliceblue;
+}
+
+.checkbox .complete {
+  color: green;
+}
+.checkbox button{
+  background-color: aliceblue;
+}
+.bottom {
+  min-height: 10vh;
+  background-color: aliceblue;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px solid grey;
+  margin-left: 2px;
+}
+
+.bottom span {
+  margin-right: 16px;
+  font-size: 1.5rem;
+}
+
+#form {
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.hide-form {
+  display: none;
+}
+
+.show-form {
+  display: block;
+}
+
+.expand-button {
+  background-color: aliceblue;
+  border: none;
+  align-self: flex-start;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: rgb(81, 81, 237);
+}
+
+.expand-button span {
+  display: block;
+  font-size: 3rem;
+}
+
+.btn {
+  display: block;
+  width: 4rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  justify-self: center;
+  align-self: center;
+  margin-top: 10px;
+  background-color: rgb(97, 97, 255);
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+#form input {
+  display: block;
+  margin-top: 10px;
+  width: 80%;
+  border: 4px;
+  height: 2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+@media screen and (min-width: 700px) {
   #form input {
-    display: block;
-    margin-top: 10px;
-    width: 80%;
-    border: 4px;
-    height: 2rem;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    padding-left: 5px;
+    width: 60%;
   }
-
-  @media screen and (min-width:700px) {
-    #form input{
-      width: 60%;
-    }
+}
+@media screen and (min-width: 1100px) {
+  #form input {
+    width: 60%;
   }
-  @media screen and (min-width:1100px) {
-    #form input{
-      width: 60%;
-    }
-    body{
-      width: 70%;
-      margin: auto;
-    }
-    .bottom{
-      width: 70%;
-      margin-right: 15.5%;
-    }
+  body {
+    width: 70%;
+    margin: auto;
   }
+  .bottom {
+    width: 70%;
+    margin-right: 15.38%;
+  }
+}

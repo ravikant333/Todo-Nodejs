@@ -74,6 +74,7 @@ const showAll = async (e) => {
     const done='done'
     const complete='complete'
     const fav='favourite'
+    data.reverse()
    await data.map((todo) => {
       html += ` <div class="list-item" >
             <div class="item-left">
